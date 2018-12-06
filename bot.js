@@ -1,7 +1,10 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
 const prefix = "."
-bot.login('NTE3MTIxODYyMDk1MDc3NDA2.Dt9qzQ.nz2q8fTGIjjUspp9GIsPwAZSx6s')
+-const token = 'NTE3MTIxODYyMDk1MDc3NDA2.Dt9nFg.4UEhPNwmrrfR_20wzeBjpaTLIFQ';
++const token = process.env.token;
+
+bot.login(token)
 var options = ["Heads", "Tails", "shut up gay piece of shit"];
 var motd = ["John Wick needs your help"];
 
